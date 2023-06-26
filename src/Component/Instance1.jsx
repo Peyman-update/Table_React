@@ -1,4 +1,4 @@
-import React, { setState, useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Student_context from "../Context/context1";
 import LogoutButton from "./LogoutButton";
@@ -14,18 +14,24 @@ function Instance1() {
         Last: family, 
         Age: age
     })
+
+    Student.forEach((v)=>{
+      if (v.Name == "" || v.Last == "" || v.Age == "" ) {
+        alert("Please Enter correct Information")
+        Student.pop();
+      }
+    })
+
     setStudent([...Student ])
   };
 
   const Search = (thing) =>{
-    
      Student.filter((v)=>{
       if (v.Name == thing || v.Last == thing || v.age == thing) {
          return alert(`Name is : ${v.Name} LastName is :${v.Last} Age is : ${v.Age}`)
       }
     })
 
-    
   }
 
   
@@ -35,9 +41,11 @@ function Instance1() {
         <div className="container">
         <div className="row">
           <div className="col-md-6"><Table/></div>
-          <div className="col-md-6" ><LogoutButton /></div>
+          <div className="col-md-6" >
+            <LogoutButton />
+            <Search_racord/>
+            </div>
         </div>
-        <Search_racord/>
         </div>
       </Student_context.Provider>
     </div>

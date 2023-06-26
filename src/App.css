@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* LogoutButton Component */
+
+.form-user{
+     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+.form-user .Form-control {
+  margin-bottom: 10px;
+}
+
+/* Search Component */
+
+.search-box{
+  display: flex;
+  justify-content: end;
 }

@@ -13,7 +13,7 @@ const Search_racord = () => {
 
   return (
     <>
-      <div>
+      <div className="search-box">
         <input
           type="text"
           value={Search}

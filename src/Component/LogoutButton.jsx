@@ -8,15 +8,10 @@ function LogoutButton(props) {
   const [Family, setFamily] = useState("");
   const [Age, setAge] = useState("");
 
-  // const [inputs , setinputs] = useState({
-  //   Name:"",
-  //   Last:"",
-  //   Age:""
-  // })
-
   const handleSubmite = (e) => {
     e.preventDefault();
     add(Name ,Family ,Age );
+    
      setName("");
      setFamily("");
      setAge("");
@@ -24,9 +19,9 @@ function LogoutButton(props) {
 
   return (
     <>
-      <form onSubmit={handleSubmite}>
+      <form className="form-user" onSubmit={handleSubmite}>
         <div className="Form-control">
-          <label id="Name">Name : </label>
+          <label className="mx-3"  id="Name">Name : </label>
           <input
             type="text"
             name="Name"
@@ -38,8 +33,8 @@ function LogoutButton(props) {
           />
         </div>
 
-        <div className="Form-control">
-          <label id="Family">Last : </label>
+        <div className="Form-control  ">
+          <label className="mx-3" id="Family">Last : </label>
           <input
             type="text"
             name="Family"
@@ -51,8 +46,8 @@ function LogoutButton(props) {
           />
         </div>
 
-        <div className="Form-control">
-          <label id="Age">Age : </label>
+        <div className="Form-control ">
+          <label className="mx-3"  id="Age">Age : </label>
           <input
             type="text"
             name="Age"
