@@ -6,10 +6,8 @@ const Search_racord = () => {
   const { st, search } = useContext(Student_context);
 
   const HandleClick = () => {
-    search(Search)
+    search(Search);
   };
-
-
 
   return (
     <>
@@ -23,7 +21,6 @@ const Search_racord = () => {
         />
         <button onClick={HandleClick}>Search</button>
       </div>
-    
     </>
   );
 };

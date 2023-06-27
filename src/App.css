@@ -1,11 +1,7 @@
 .App {
   text-align: center;
-  
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  padding: 20px 0 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -40,11 +36,11 @@
 
 /* LogoutButton Component */
 
-.form-user{
-     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 20px 0;
+.form-user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 0;
 }
 
 .form-user .Form-control {
@@ -53,7 +49,16 @@
 
 /* Search Component */
 
-.search-box{
+.search-box {
   display: flex;
   justify-content: end;
+}
+
+/* instance Component */
+
+.addUser {
+  padding: 10px 0;
+  margin-top: 10px;
+  background-color: rgb(238, 250, 215);
+  color: #282c34;
 }
